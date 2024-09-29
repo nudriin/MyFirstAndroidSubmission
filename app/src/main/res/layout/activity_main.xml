@@ -1,19 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/TV_greeting"
+            style="@style/Text.Heading.Bold"
+            android:layout_marginBottom="20dp"
+            android:text="@string/greeting"
+            android:textColor="@color/dark"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/LL_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/IV_icon_about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hand_shake"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/TV_greeting"
+            app:layout_constraintTop_toTopOf="@id/TV_greeting"
+            app:layout_constraintBottom_toBottomOf="@id/TV_greeting"
+            />
+
+        <LinearLayout
+            android:id="@+id/LL_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_header_bg"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_greeting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            >
+            <TextView
+                style="@style/Text.MarginLeftRight"
+                android:text="@string/introduce"
+                android:textColor="@color/muted_blue"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView
+                style="@style/Text.Heading.Bold"
+                android:text="@string/nurdin"
+                android:textColor="@color/white"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView
+                style="@style/Text.MarginLeftRight"
+                android:text="@string/self_description"
+                android:textColor="@color/muted_blue"
+                android:layout_marginBottom="4dp"
+                />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include_card_about"
+            layout="@layout/card_about"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/LL_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV_tech"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include_card_about"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

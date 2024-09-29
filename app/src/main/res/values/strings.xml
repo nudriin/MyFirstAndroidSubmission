@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">MySubmission</string>
+    <string-array name="data_tech">
+        <item>React</item>
+        <item>TypeScript</item>
+        <item>JavaScript</item>
+        <item>Kotlin</item>
+        <item>Golang</item>
+        <item>NestJS</item>
+        <item>NodeJS</item>
+        <item>Express.JS</item>
+        <item>Android Studio</item>
+        <item>GraphQL</item>
+        <item>MySQL</item>
+    </string-array>
+
+    <string-array name="data_tech_detail">
+        <item>React.js, more commonly known as React, is a free, open-source JavaScript library. It works best to build user interfaces by combining sections of code (components) into full websites. Originally built by Facebook, Meta and the open-source community now maintain it. One of the good things about React is that you can use it as much or as little as you want! For example, you can build your entire site in React or just use one single React component on one page.</item>
+        <item>TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript.</item>
+        <item>JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.</item>
+        <item>Kotlin is a cross-platform, statically typed, general-purpose high-level programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin standard library depends on the Java Class Library, but type inference allows its syntax to be more concise</item>
+        <item>Go is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but also has memory safety, garbage collection, structural typing, and CSP-style concurrency.</item>
+        <item>Introduction Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with and fully supports TypeScript (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).</item>
+        <item>Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.</item>
+        <item>Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.</item>
+        <item>Android Studio is the official integrated development environment for Google Android operating system, built on JetBrains IntelliJ IDEA software and designed specifically for Android development. It is available for download on Windows, macOS and Linux based operating systems.</item>
+        <item>GraphQL is a data query and manipulation language for APIs, that allows a client to specify what data it needs. A GraphQL server can fetch data from separate sources for a single client query and present the results in a unified graph, so it is not tied to any specific database or storage engine.</item>
+        <item>MySQL is an open-source relational database management system. Its name is a combination of My, the name of co-founder Michael Widenius daughter My, and SQL, the acronym for Structured Query Language.</item>
+    </string-array>
+
+    <string-array name="data_techIcon">
+        <item>https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/185062810-7ee0c3d2-17f2-4a98-9d8a-a9576947692b.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png</item>
+        <item>https://github.com/marwin1991/profile-technology-icons/assets/136815194/519bfaf3-c242-431e-a269-876979f05574</item>
+        <item>https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png</item>
+        <item>https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png</item>
+    </string-array>
+
+    <string name="tech_title_dummy">Tech</string>
+    <string name="tech_desc_dummy">Description</string>
+    <string name="nurdin">Nurdin</string>
+    <string name="greeting">Hey There</string>
+    <string name="introduce">My name is</string>
+    <string name="self_description">i\'m a passionate backend developer, I\'m currently learning Backend Development, Microservices, and Mobile Development. Here are the technologies that i use</string>
+    <string name="about_main_header">Want to know about me?</string>
+    <string name="about_main_body">Click button below</string>
+    <string name="about_btn">About Me</string>
+
+
 </resources>
