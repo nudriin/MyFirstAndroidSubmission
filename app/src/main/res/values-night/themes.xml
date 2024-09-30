@@ -8,12 +8,13 @@
         <!-- Secondary -->
         <item name="colorSecondary">@color/muted_light_blue</item>
         <item name="colorOnSecondary">@color/dark</item>
-
+        <item name="android:windowBackground">@color/dark</item>
     </style>
 
     <style name="Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/muted_light_blue</item>
     </style>
 
     <style name="Text.MarginLeftRight">
