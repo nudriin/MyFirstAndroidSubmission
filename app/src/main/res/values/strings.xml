@@ -45,6 +45,7 @@
     <string name="tech_title_dummy">Tech</string>
     <string name="tech_desc_dummy">Description</string>
     <string name="nurdin">Nurdin</string>
+    <string name="nudriin">nudriin</string>
     <string name="greeting">Hey There</string>
     <string name="introduce">My name is</string>
     <string name="self_description">i\'m a passionate backend developer, I\'m currently learning Backend Development, Microservices, and Mobile Development. Here are the technologies that i use</string>
