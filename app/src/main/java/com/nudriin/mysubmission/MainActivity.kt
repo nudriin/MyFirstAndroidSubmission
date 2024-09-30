@@ -4,13 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.nudriin.mysubmission.databinding.ActivityMainBinding
-import com.nudriin.mysubmission.databinding.CardTechBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
@@ -56,7 +52,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun moveToTechDetail(tech: Tech){
-
+        val detailIntent = Intent(this@MainActivity, TechDetailActivity::class.java)
+        detailIntent.putExtra(TechDetailActivity.DATA_DETAIl, tech)
+        startActivity(detailIntent)
     }
 
     override fun onClick(v: View?) {
@@ -65,6 +63,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val aboutIntent = Intent(this@MainActivity, AboutActivity::class.java)
                 startActivity(aboutIntent)
             }
-        }
+                                         }
     }
 }
