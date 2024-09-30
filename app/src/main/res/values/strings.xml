@@ -49,8 +49,14 @@
     <string name="introduce">My name is</string>
     <string name="self_description">i\'m a passionate backend developer, I\'m currently learning Backend Development, Microservices, and Mobile Development. Here are the technologies that i use</string>
     <string name="about_main_header">Want to know about me?</string>
-    <string name="about_main_body">Click button below</string>
+    <string name="about_main_body">Click the button below</string>
     <string name="about_btn">About Me</string>
+    <string-array name="about_detail">
+        <item>I am Nurdin, a student of the Informatics Engineering Program at the University of Palangka Raya, with extensive practical experience in software development. I am very passionate about the IT world, especially in web, mobile, and back-end development.</item>
+        <item>In backend development, I have deep experience with Node.js, Express.js, NestJS, GraphQL, RabbitMQ Go and PHP. For frontend development, I am accustomed to using React combined with Tailwind CSS to create responsive and modern user interfaces.</item>
+        <item>I have participated in various freelance projects that have given me the opportunity to develop applications that meet the needs of clients with varying scales and complexities. Through these projects, I have honed my technical skills as well as my project management and client communication skills.</item>
+    </string-array>
+    <string name="email">mrsunnysummer@gmail.com</string>
 
 
 </resources>

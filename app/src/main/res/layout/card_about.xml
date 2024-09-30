@@ -56,7 +56,7 @@
             card_view:layout_constraintTop_toBottomOf="@id/about_main_head" />
 
         <Button
-            android:id="@+id/about_main_btn"
+            android:id="@+id/about_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_btn"

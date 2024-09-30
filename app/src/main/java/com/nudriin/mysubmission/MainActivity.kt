@@ -1,7 +1,9 @@
 package com.nudriin.mysubmission
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.nudriin.mysubmission.databinding.ActivityMainBinding
 import com.nudriin.mysubmission.databinding.CardTechBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private val techList = ArrayList<Tech>()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.RVTech.setHasFixedSize(true)
 
+        binding.includeCardAbout.aboutPage.setOnClickListener(this)
         techList.addAll(getTechList())
         showTechList()
     }
@@ -54,5 +57,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun moveToTechDetail(tech: Tech){
 
+    }
+
+    override fun onClick(v: View?) {
+        when(v?.id) {
+            binding.includeCardAbout.aboutPage.id -> {
+                val aboutIntent = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(aboutIntent)
+            }
+        }
     }
 }
